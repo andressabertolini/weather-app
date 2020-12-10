@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './index.css'
 
 const api = {
@@ -10,16 +10,19 @@ function App() {
   const [query, setQuery] = useState('');
   const [weather, setWeather] = useState({});
 
-  const search = evt => {
+  useEffect(() => {
+    changeCity("São Paulo")
+  });
 
-      setQuery('London');
-      fetch(`${api.base}weather?q=${query}&id=524901&appid=${api.key}`)
+  function changeCity(city){
+      setQuery(city);
+      fetch(`${api.base}weather?q=${query}&units=metric&id=524901&appid=${api.key}`)
         .then(res => res.json())
         .then(result => {
           setWeather(result);  
           console.log(result);
+          setQuery('');
         })
-
   }
 
   const dateBuilder = (d) => {
@@ -37,15 +40,23 @@ function App() {
   return (
     <div className="app sunny">
       <div className="gradient-background">
-        {dateBuilder(new Date())}
-
-        <button onClick={search}>Mudar</button>
-        São Paulo City
-        15º
-        Sunny
+      {(typeof weather.main != "undefined") ? (
+        <div className="weather-container">
+          <p className="date">{dateBuilder(new Date())}</p>
+          <p className="city-name">{weather.name}</p>
+          <p className="degrees">{Math.round(weather.main.temp)}ºC</p>
+          <p className="weather-name">{weather.weather[0].main}</p>
+        </div>
+      ) : ('')}
+        <button onClick={() => changeCity("Roma")}>Roma</button>
+        <button onClick={() => changeCity("London")}>São Paulo</button>
+        <button onClick={() => changeCity("Tokyo")}>Tokyo</button>
+        <button onClick={() => changeCity("Tokyo")}>New York</button>
       </div>
+
     </div>
   );
 }
+
 
 export default App;
