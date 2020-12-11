@@ -1,27 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import './index.css'
 
+import flagBrazil from './assets/img/flag-brazil.png';
+import flagUSA from './assets/img/flag-united-states.png';
+import flagItaly from './assets/img/flag-italy.png';
+import flagJapan from './assets/img/flag-japan.png';
+
 const api = {
   key: "4e26469eb587d0e30e0d80f1415e8b14",
   base: "http://api.openweathermap.org/data/2.5/"
 }
 
 function App() {
-  const [query, setQuery] = useState('');
   const [weather, setWeather] = useState({});
 
   useEffect(() => {
-    changeCity("São Paulo")
-  });
+    changeCity("New York")  
+  }, []);
 
   function changeCity(city){
-      setQuery(city);
-      fetch(`${api.base}weather?q=${query}&units=metric&id=524901&appid=${api.key}`)
+    console.log(city);
+      fetch(`${api.base}weather?q=${city}&units=metric&id=524901&appid=${api.key}`)
         .then(res => res.json())
         .then(result => {
           setWeather(result);  
           console.log(result);
-          setQuery('');
         })
   }
 
@@ -38,20 +41,36 @@ function App() {
   }
 
   return (
-    <div className="app sunny">
+    <div className={(typeof weather.main != "undefined") ? (`${weather.name.replace(" ", "-").replace("ã", "a").toLowerCase()}-${weather.weather[0].main.toLowerCase()} ${weather.weather[0].icon.slice(weather.weather[0].icon.length - 1)} app`) : 'app'}>
       <div className="gradient-background">
-      {(typeof weather.main != "undefined") ? (
-        <div className="weather-container">
-          <p className="date">{dateBuilder(new Date())}</p>
-          <p className="city-name">{weather.name}</p>
-          <p className="degrees">{Math.round(weather.main.temp)}ºC</p>
-          <p className="weather-name">{weather.weather[0].main}</p>
+        <div className="weather-wrapper">
+        <button className="btn-city" onClick={() => changeCity("New York")}>
+          <img src={flagUSA}/>
+          New York
+        </button>
+        <button className="btn-city" onClick={() => changeCity("São Paulo")}>
+          <img src={flagBrazil}/>
+          São Paulo
+        </button>
+        <button className="btn-city" onClick={() => changeCity("Rome")}>
+          <img src={flagItaly}/>
+          Rome
+        </button>
+        <button className="btn-city" onClick={() => changeCity("Tokyo")}>
+          <img src={flagJapan}/>
+          Tokyo
+        </button>
+
+        {(typeof weather.main != "undefined") ? (
+          <div className="weather-container">
+            <p className="date">{dateBuilder(new Date())}</p>
+            <p className="city-name">{weather.name}</p>
+            <p className="degrees">{Math.round(weather.main.temp)}ºC</p>
+            <img src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} />
+            <p className="weather-name">{weather.weather[0].main}</p>
+          </div>
+        ) : ('')}
         </div>
-      ) : ('')}
-        <button onClick={() => changeCity("Roma")}>Roma</button>
-        <button onClick={() => changeCity("London")}>São Paulo</button>
-        <button onClick={() => changeCity("Tokyo")}>Tokyo</button>
-        <button onClick={() => changeCity("Tokyo")}>New York</button>
       </div>
 
     </div>
