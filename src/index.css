@@ -112,12 +112,18 @@ body{
 }
 
 /*************** São Paulo Photos *****************/
-.sao-paulo-thunderstorm{
-  background-image: url(./assets/img/sao-paulo-clouds-day.jpg);
+.sao-paulo-thunderstorm.d{
+  background-image: url(./assets/img/sao-paulo-thunderstorm-day.jpg);
+}
+.sao-paulo-thunderstorm.n{
+  background-image: url(./assets/img/sao-paulo-thunderstorm-night.jpg);
 }
 
-.sao-paulo-drizzle{
-  background-image: url(./assets/img/sao-paulo-clouds-day.jpg);
+.sao-paulo-drizzle.d{
+  background-image: url(./assets/img/sao-paulo-drizzle-day.jpg);
+}
+.sao-paulo-drizzle.n{
+  background-image: url(./assets/img/sao-paulo-drizzle-night.jpg);
 }
 
 .sao-paulo-rain.d{
@@ -127,10 +133,6 @@ body{
   background-image: url(./assets/img/sao-paulo-rain-night.jpg);
 }
 
-.sao-paulo-snow{
-  background-image: url(./assets/img/sao-paulo-clouds-day.jpg);
-}
-
 .sao-paulo-clear.d{
   background-image: url(./assets/img/sao-paulo-clear-day.jpg);
 }
@@ -138,10 +140,10 @@ body{
   background-image: url(./assets/img/sao-paulo-clear-night.jpg);
 }
 
-.sao-paulo-clouds.d{
+.sao-paulo-clouds.d, .sao-paulo-snow.d{
   background-image: url(./assets/img/sao-paulo-clouds-day.jpg);
 }
-.sao-paulo-clouds.n{
+.sao-paulo-clouds.n, .sao-paulo-snow.n{
   background-image: url(./assets/img/sao-paulo-clouds-night.jpg);
 }
 
@@ -164,7 +166,7 @@ body{
   background-image: url(./assets/img/rome-rain-day.jpg);
 }
 .rome-rain.n{
-  background-image: url(./assets/img/rome-rain-day.jpg);
+  background-image: url(./assets/img/rome-rain-night.jpg);
 }
 
 .rome-snow.d{
@@ -190,38 +192,38 @@ body{
 
 /*************** Tokyo Photos *****************/
 .tokyo-thunderstorm.d{
-  background-image: url(./assets/img/tokyo-thunderstorm-night.jpg);
+  background-image: url(./assets/img/tokyo-thunderstorm-day.jpg);
 }
 .tokyo-thunderstorm.n{
   background-image: url(./assets/img/tokyo-thunderstorm-night.jpg);
 }
 
 .tokyo-drizzle.d{
-  background-image: url(./assets/img/tokyo-clear-day.jpg);
+  background-image: url(./assets/img/tokyo-drizzle-day.jpg);
 }
 .tokyo-drizzle.n{
-  background-image: url(./assets/img/tokyo-clear-day.jpg);
+  background-image: url(./assets/img/tokyo-drizzle-night.jpg);
 }
 
 .tokyo-rain.d{
-  background-image: url(./assets/img/tokyo-clear-day.jpg);
+  background-image: url(./assets/img/tokyo-rain-day.jpg);
 }
 .tokyo-rain.n{
-  background-image: url(./assets/img/tokyo-clear-day.jpg);
+  background-image: url(./assets/img/tokyo-rain-night.jpg);
 }
 
 .tokyo-snow.d{
-  background-image: url(./assets/img/tokyo-clear-day.jpg);
+  background-image: url(./assets/img/tokyo-snow-day.jpg);
 }
 .tokyo-snow.n{
-  background-image: url(./assets/img/tokyo-clear-day.jpg);
+  background-image: url(./assets/img/tokyo-snow-day.jpg);
 }
 
 .tokyo-clear.d{
   background-image: url(./assets/img/tokyo-clear-day.jpg);
 }
 .tokyo-clear.n{
-  background-image: url(./assets/img/tokyo-clear-day.jpg);
+  background-image: url(./assets/img/tokyo-clear-night.jpg);
 }
 
 .tokyo-clouds.d{
