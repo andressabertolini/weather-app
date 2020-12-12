@@ -8,7 +8,7 @@ import flagJapan from './assets/img/flag-japan.png';
 
 const api = {
   key: "4e26469eb587d0e30e0d80f1415e8b14",
-  base: "http://api.openweathermap.org/data/2.5/"
+  base: "https://api.openweathermap.org/data/2.5/"
 }
 
 function App() {

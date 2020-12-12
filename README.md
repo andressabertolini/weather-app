@@ -8,6 +8,7 @@ https://www.youtube.com/watch?v=GuA0_Z1llYU
 ## Live Demo
 
 If you're like me and is always in a rush, just see the live demo, with no need to clone the project and set up the enviroment:
+https://andressabertolini.github.io/weather-app/
 
 ### How to execute
 
