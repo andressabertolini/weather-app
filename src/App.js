@@ -20,12 +20,12 @@ function App() {
 
   function changeCity(city){
     console.log(city);
-    fetch(`${api.base}weather?q=${city}&units=metric&id=524901&appid=${api.key}`)
-      .then(res => res.json())
-      .then(result => {
-        setWeather(result);  
-        console.log(result);
-      })
+      fetch(`${api.base}weather?q=${city}&units=metric&id=524901&appid=${api.key}`)
+        .then(res => res.json())
+        .then(result => {
+          setWeather(result);  
+          console.log(result);
+        })
   }
 
   const dateBuilder = (d) => {
