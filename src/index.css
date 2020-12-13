@@ -21,12 +21,12 @@ body{
 }
 
 .weather-wrapper{
-  width: 90%;
+  width: 100%;
   max-width: 344px;
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%,-50%);
 }
 
 .btn-city{
@@ -38,6 +38,7 @@ body{
   margin: 5px;
   cursor: pointer;
   outline: none;
+  width: 76px;
 }
 
 .btn-city img{
