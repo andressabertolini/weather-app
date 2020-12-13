@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/weather-app/static/css/main.f1e38e07.chunk.css",
+    "main.css": "/weather-app/static/css/main.ae28b96e.chunk.css",
     "main.js": "/weather-app/static/js/main.e9d43e80.chunk.js",
     "main.js.map": "/weather-app/static/js/main.e9d43e80.chunk.js.map",
     "runtime-main.js": "/weather-app/static/js/runtime-main.4ae9030d.js",
@@ -10,14 +10,14 @@
     "static/js/3.0934131c.chunk.js": "/weather-app/static/js/3.0934131c.chunk.js",
     "static/js/3.0934131c.chunk.js.map": "/weather-app/static/js/3.0934131c.chunk.js.map",
     "index.html": "/weather-app/index.html",
-    "static/css/main.f1e38e07.chunk.css.map": "/weather-app/static/css/main.f1e38e07.chunk.css.map",
+    "static/css/main.ae28b96e.chunk.css.map": "/weather-app/static/css/main.ae28b96e.chunk.css.map",
     "static/js/2.c81620a6.chunk.js.LICENSE.txt": "/weather-app/static/js/2.c81620a6.chunk.js.LICENSE.txt",
     "static/media/index.css": "/weather-app/static/media/tokyo-thunderstorm-night.03b99466.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.4ae9030d.js",
     "static/js/2.c81620a6.chunk.js",
-    "static/css/main.f1e38e07.chunk.css",
+    "static/css/main.ae28b96e.chunk.css",
     "static/js/main.e9d43e80.chunk.js"
   ]
 }
