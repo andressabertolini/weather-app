@@ -113,6 +113,13 @@ body{
   background-image: url(./assets/img/new-york-clouds-night.jpg);
 }
 
+.new-york-mist.d{
+  background-image: url(./assets/img/new-york-mist-day.jpg);
+}
+.new-york-mist.n{
+  background-image: url(./assets/img/new-york-mist-night.jpg);
+}
+
 /*************** São Paulo Photos *****************/
 .sao-paulo-thunderstorm.d{
   background-image: url(./assets/img/sao-paulo-thunderstorm-day.jpg);
@@ -147,6 +154,10 @@ body{
 }
 .sao-paulo-clouds.n, .sao-paulo-snow.n{
   background-image: url(./assets/img/sao-paulo-clouds-night.jpg);
+}
+
+.sao-paulo-mist{
+  background-image: url(./assets/img/sao-paulo-mist-day.jpg);
 }
 
 /*************** Rome Photos *****************/
@@ -192,6 +203,10 @@ body{
   background-image: url(./assets/img/rome-clouds-night.jpg);
 }
 
+.rome-mist{
+  background-image: url(./assets/img/rome-mist-day.jpg);
+}
+
 /*************** Tokyo Photos *****************/
 .tokyo-thunderstorm.d{
   background-image: url(./assets/img/tokyo-thunderstorm-day.jpg);
@@ -233,4 +248,8 @@ body{
 }
 .tokyo-clouds.n{
   background-image: url(./assets/img/tokyo-clouds-night.jpg);
+}
+
+.tokyo-mist{
+  background-image: url(./assets/img/tokyo-mist-day.jpg);
 }
