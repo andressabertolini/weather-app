@@ -6,7 +6,7 @@ This was developed from a tutorial for study purposes:
 https://www.youtube.com/watch?v=GuA0_Z1llYU
 
 ## Live Demo
-![Alt text](src/assets/img/flag-brazil.png?raw=true "Weather App Preview")
+![Alt text](thumbnail.png?raw=true "Weather App Preview")
 
 If you're like me and is always in a rush, just see the live demo, with no need to clone the project and set up the enviroment:
 https://andressabertolini.github.io/weather-app/
