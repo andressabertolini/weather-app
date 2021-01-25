@@ -5,13 +5,13 @@ This project is a ReactJS project that shows the weather in 4 cities: New York, 
 This was developed from a tutorial for study purposes:
 https://www.youtube.com/watch?v=GuA0_Z1llYU
 
-## Live Demo
-![Alt text](thumbnail.png?raw=true "Weather App Preview")
-
+# Live Demo
 If you're like me and is always in a rush, just see the live demo, with no need to clone the project and set up the enviroment:
 https://andressabertolini.github.io/weather-app/
 
-### How to execute
+[![Alt text](thumbnail.png?raw=true "Weather App Preview")](https://andressabertolini.github.io/weather-app/)
+
+# How to execute
 
 1. You need to download and install node.js 
 
