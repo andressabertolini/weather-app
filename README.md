@@ -8,9 +8,10 @@ https://www.youtube.com/watch?v=GuA0_Z1llYU
 
 # Live Demo
 If you're like me and is always in a rush, just see the live demo, with no need to clone the project and set up the enviroment:
-https://andressabertolini.github.io/weather-app/
+[https://andressabertolini.github.io/weather-app/](https://andressabertolini.github.io/weather-app/){:target="_blank"}
 
 [![Alt text](thumbnail.png?raw=true "Weather App Preview")](https://andressabertolini.github.io/weather-app/){:target="_blank"}
+
 
 # How to execute
 
