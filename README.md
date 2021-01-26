@@ -9,6 +9,7 @@ https://www.youtube.com/watch?v=GuA0_Z1llYU
 # Live Demo
 If you're like me and is always in a rush, just see the live demo, with no need to clone the project and set up the enviroment:
 <a href="https://andressabertolini.github.io/weather-app/" target="_blank">https://andressabertolini.github.io/weather-app/</a>
+![New tab](https://andressabertolini.github.io/weather-app/)  
 
 <a href="https://andressabertolini.github.io/weather-app/" target="_blank"><img src="thumbnail.png"/></a>
 
