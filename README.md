@@ -8,9 +8,9 @@ https://www.youtube.com/watch?v=GuA0_Z1llYU
 
 # Live Demo
 If you're like me and is always in a rush, just see the live demo, with no need to clone the project and set up the enviroment:
-[Link](https://andressabertolini.github.io/weather-app/ target="_blank")
+<a href="https://andressabertolini.github.io/weather-app/" target="_blank">https://andressabertolini.github.io/weather-app/</a>
 
-[![Alt text](thumbnail.png?raw=true "Weather App Preview")](https://andressabertolini.github.io/weather-app/  target="_blank")
+<a href="https://andressabertolini.github.io/weather-app/" target="_blank"><img src="thumbnail.png"/></a>
 
 
 # How to execute
