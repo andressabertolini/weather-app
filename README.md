@@ -5,22 +5,22 @@ This project is a ReactJS project that shows the weather in 4 cities: New York, 
 This was developed from a tutorial for study purposes:
 https://www.youtube.com/watch?v=GuA0_Z1llYU
 
+<br />
 
 # Live Demo
 If you're like me and is always in a rush, just see the live demo, with no need to clone the project and set up the enviroment:
-<a href="https://andressabertolini.github.io/weather-app/" target="_blank">https://andressabertolini.github.io/weather-app/</a>
-![New tab](https://andressabertolini.github.io/weather-app/)  
+https://andressabertolini.github.io/weather-app/
 
-<a href="https://andressabertolini.github.io/weather-app/" target="_blank"><img src="thumbnail.png"/></a>
+[![Thumbnail](thumbnail.png?raw=true "Preview")](https://andressabertolini.github.io/weather-app/)
 
 
 # How to execute
 
-1. You need to download and install node.js 
-
-2. Run in your console:
+Run in terminal:
 - npm install
 - npm start
+
+<br />
 
 That's all folks,
 
